@@ -1,0 +1,117 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'San Francisco', Helvetica, Arial, san-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ghostClass */
+.ghost {
+  opacity: .5;
+  background: #C8EBFB;
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+body {
+  background-color: #FAFAFA;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content {
+  margin: auto;
+}
+
+.section-title {
+  color: #4B4F56;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  width: 120px;
+  height: auto;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  -webkit-transition: box-shadow .2s, transform .2s, opacity .2s;
+}
+
+.link:hover {
+  -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0, -4px);
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-item .thumbnail {
+  width: 80px;
+  Height: 100px;
+  display: flex;
+  align-items: center;
+}
+.grid-item .thumbnail-img {
+  display: block;
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  pointer-events: none;
+}
+.grid-item .title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grid-lg .link {
+  width: calc( 1000px / 3 - 120px / 3);
+  height: auto;
+}
+.grid-lg .grid-item .thumbnail {
+  width: calc( 1000px / 3 - 120px / 3);
+  Height: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.grid-lg .grid-item .thumbnail-img {
+  display: block;
+  max-width: calc( 1000px / 3 - 120px / 3);
+  max-height: 300px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
