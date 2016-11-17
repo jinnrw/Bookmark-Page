@@ -1,6 +1,6 @@
 # Bookmark-Page
 
-This is a personal curated bookmarks web page. The bookmarks in Favorites section are [sortable](https://jqueryui.com/sortable/) using jQuery UI.
+A Chrome apps (chrome://apps/) alternative for personal favorites and bookmarks. The bookmarks in Favorites section are [sortable](https://jqueryui.com/sortable/) using jQuery UI.
 
 ### Version log:
 1. First draft. (v1.0, 2016-11-15)
